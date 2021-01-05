@@ -24,6 +24,6 @@ int main()
 {
   vector<int> values = {1, 4, 8, 6, 9, 4};
   int len = values.size();
-  cout << "Maximum profit can be " << rodCutting(values, len) << endl;
+  cout << "Maximum obtainable profit would be " << rodCutting(values, len) << endl;
   return 0;
 }
