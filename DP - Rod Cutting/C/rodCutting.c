@@ -26,6 +26,6 @@ int main()
 {
   int values[] = {3, 6, 8, 10, 14, 16};
   int len = sizeof(values) / sizeof(values[0]);
-  printf("Maximum profit can be %d\n", rodCutting(values, len));
+  printf("Maximum obtainable profit would be %d\n", rodCutting(values, len));
   return 0;
 }
