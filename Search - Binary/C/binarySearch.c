@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// function to search an element using binary seaching
 int binarySearch(int a[], int n, int x)
 {
   int st = 0, ed = n - 1;
@@ -19,6 +20,9 @@ int binarySearch(int a[], int n, int x)
   }
   return -1;
 }
+
+
+// main function to test above function
 
 int main()
 {

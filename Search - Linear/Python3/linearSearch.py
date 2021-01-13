@@ -1,6 +1,7 @@
 # Author:   Vishal Gaur
 # Created:  03-01-2021  22:21:11
 
+# function to search an element using linear seaching
 def linearSearch(a, x):
     for i in range(len(a)):
         if a[i] == x:
@@ -8,8 +9,9 @@ def linearSearch(a, x):
 
     return -1
 
-# Driver Code
 
+
+# Driver Code to test above function
 
 arr = [45, 76, 12, 19, 43, 48, 56, 67]
 

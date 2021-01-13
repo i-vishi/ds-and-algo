@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// function to sort an array using bubble sort
 void bubbleSort(vector<int> &a)
 {
   for (int i = 0; i < a.size() - 1; i++)
@@ -18,6 +19,9 @@ void bubbleSort(vector<int> &a)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {

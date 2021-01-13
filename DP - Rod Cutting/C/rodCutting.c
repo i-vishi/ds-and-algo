@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// function to find best obtainable price
 int rodCutting(int values[], int n)
 {
   int pro[n + 1];
@@ -21,6 +22,9 @@ int rodCutting(int values[], int n)
   }
   return pro[n];
 }
+
+
+// main function to test above function
 
 int main()
 {

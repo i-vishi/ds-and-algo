@@ -6,6 +6,8 @@
 
 using namespace std;
 
+
+// function to sort an array using selection sort
 void selectionSort(vector<int> &a)
 {
   for (int i = 0; i < a.size() - 1; i++)
@@ -22,6 +24,9 @@ void selectionSort(vector<int> &a)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {

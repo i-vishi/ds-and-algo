@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 
+
+// function to sort an array using selection sort
 void selectionSort(int a[], int n)
 {
   for (int i = 0; i < n - 1; i++)
@@ -22,6 +24,9 @@ void selectionSort(int a[], int n)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {

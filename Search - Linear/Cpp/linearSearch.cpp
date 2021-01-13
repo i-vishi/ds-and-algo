@@ -1,5 +1,5 @@
 /* 	Author:		Vishal Gaur
-* 	Created:	02-01-2021  14:27:26
+* 	Created:	03-01-2021  22:15:15
 */
 
 #include <iostream>
@@ -7,28 +7,26 @@
 
 using namespace std;
 
-int binarySearch(vector<int> &a, int x)
+// function to search an element using linear seaching
+int linearSearch(vector<int> &a, int x)
 {
-  int st = 0, ed = a.size() - 1;
-  while (st <= ed)
+  for (int i = 0; i < a.size(); i++)
   {
-    int mid = st + (ed - st) / 2;
-    if (a[mid] == x)
-      return mid;
-    if (a[mid] < x)
-      st = mid + 1;
-    else
-      ed = mid - 1;
+    if (a[i] == x)
+      return i;
   }
   return -1;
 }
 
+
+// main function to test above function
+
 int main()
 {
-  vector<int> arr = {11, 16, 25, 78, 89, 120};
+  vector<int> arr = {45, 65, 85, 12, 35, 97, 1, 7, 19};
   int x, res;
-  x = 78;
-  res = binarySearch(arr, x);
+  x = 19;
+  res = linearSearch(arr, x);
   if (res >= 0)
     cout << x << " found at index " << res;
   else
@@ -36,7 +34,7 @@ int main()
   cout << endl;
 
   x = 10;
-  res = binarySearch(arr, x);
+  res = linearSearch(arr, x);
   if (res >= 0)
     cout << x << " found at index " << res;
   else

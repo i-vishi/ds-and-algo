@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// function to sort an array using bubble sort
 void bubbleSort(int a[], int n)
 {
   for (int i = 0; i < n - 1; i++)
@@ -19,6 +20,9 @@ void bubbleSort(int a[], int n)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {

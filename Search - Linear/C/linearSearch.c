@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// function to search an element using linear seaching
 int linearSearch(int a[], int n, int x)
 {
   for (int i = 0; i < n; i++)
@@ -13,6 +14,9 @@ int linearSearch(int a[], int n, int x)
   }
   return -1;
 }
+
+
+// main function to test above function
 
 int main()
 {

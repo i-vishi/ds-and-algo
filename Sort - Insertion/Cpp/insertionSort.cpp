@@ -6,6 +6,8 @@
 
 using namespace std;
 
+
+// function to sort an array using insertion sort
 void insertionSort(vector<int> &a)
 {
   for (int i = 1; i < a.size(); i++)
@@ -19,6 +21,9 @@ void insertionSort(vector<int> &a)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {

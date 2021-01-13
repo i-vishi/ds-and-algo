@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// function to find best obtainable price
 int rodCutting(vector<int> values, int n)
 {
   int pro[n + 1];
@@ -19,6 +20,9 @@ int rodCutting(vector<int> values, int n)
   }
   return pro[n];
 }
+
+
+// main function to test above function
 
 int main()
 {

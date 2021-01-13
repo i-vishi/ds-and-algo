@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// function to sort an array using insertion sort
 void insertionSort(int a[], int n)
 {
   for (int i = 1; i < n; i++)
@@ -21,6 +22,9 @@ void insertionSort(int a[], int n)
     }
   }
 }
+
+
+// main function to test above function
 
 int main()
 {
