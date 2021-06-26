@@ -25,9 +25,9 @@ vector<int> findMaxCrossingSubarray(vector<int> A, int low, int high, int mid)
 
     sum = 0;
     int rightSum = INT_MIN;
-    int maxRight = mid;
+    int maxRight = mid + 1;
 
-    for (int i = mid+1; i <= high; i++)
+    for (int i = mid + 1; i <= high; i++)
     {
         sum += A[i];
         if (sum > rightSum)
@@ -76,7 +76,7 @@ int main()
 
     vector<int> res = findMaxSubarray(arr, 0, len - 1);
 
-    cout << "Maximum Subarray Sum is " << res[2] << endl;
+    cout << "Maximum Subarray Sum is : " << res[2] << endl;
     cout << "And subarray is: ";
     for (int i = res[0]; i <= res[1]; i++)
         cout << arr[i] << "  ";

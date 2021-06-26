@@ -3,9 +3,8 @@
 
 import math
 
+
 # function to find max crossing subarray
-
-
 def findMaxCrossingSubarray(A, low, mid, high):
     sum = 0
     leftSum = -math.inf
@@ -28,9 +27,8 @@ def findMaxCrossingSubarray(A, low, mid, high):
 
     return maxLeft, maxRight, leftSum+rightSum
 
+
 # function to find maximum subarray
-
-
 def findMaxSubarray(A, low, high):
     if low == high:
         return low, high, A[low]
@@ -56,5 +54,5 @@ size = len(arr)
 
 start, end, sum = findMaxSubarray(arr, 0, size-1)
 
-print("Maximum Subarray Sum is ", sum)
-print("Subrray is: ", arr[start:end+1])
+print("Maximum Subarray Sum is :", sum)
+print("Subrray is : ", arr[start:end+1])
