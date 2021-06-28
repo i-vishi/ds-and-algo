@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Binary Tree
+// Binary Tree Node
 struct TreeNode
 {
     int val;
@@ -16,7 +16,7 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-// function to get Postorder Tranversal of Binary Tree
+// function to get Postorder Traversal of Binary Tree
 vector<int> getPostorderTranversal(TreeNode *root)
 {
     vector<int> ans;
