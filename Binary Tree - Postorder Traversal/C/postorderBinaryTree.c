@@ -47,7 +47,7 @@ int main()
     root->right = n3;
     n2->right = n4;
 
-    int *res;
+    int *res = malloc(100 * sizeof(int));
     int pos = 0;
     getPostorderTraversal(root, res, &pos);
     printf("Postorder is : ");
