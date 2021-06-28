@@ -23,7 +23,7 @@ TreeNode *newNode(int val)
     return node;
 }
 
-// function to get inorder traversal of binary tree
+// function to get preorder traversal of binary tree
 void getPreorderTraversal(TreeNode *root, int *ans, int *pos)
 {
     if (root == NULL)
